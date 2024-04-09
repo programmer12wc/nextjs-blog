@@ -24,41 +24,21 @@ export default function Home({ poolData }) {
           content={poolData?.amiiboSeries + "-" + poolData?.head}
         />
         <meta property="og:description" content={poolData.amiiboSeries} />
-        <meta
-          property="og:url"
-          content={``}
-        />
-        <meta property="og:site_name" content="Gujju Planet" />
-        <meta property="article:section" content="તહેવાર" />
-        <meta property="og:updated_time" content="2024-04-09T09:12:44+00:00" />
+        <meta property="og:url" content={``} />
+        <meta property="og:site_name" content="dummy" />
         <meta property="og:image" content={poolData.image} />
         <meta property="og:image:secure_url" content={poolData.image} />
         <meta property="og:image:width" content="1000" />
         <meta property="og:image:height" content="530" />
-        <meta property="og:image:alt" content="Gujrati calendar" />
+        <meta property="og:image:alt" content={poolData.amiiboSeries} />
         <meta property="og:image:type" content="image/jpeg" />
-        <meta
-          property="article:published_time"
-          content="2024-03-06T04:04:24+00:00"
-        />
-        <meta
-          property="article:modified_time"
-          content="2024-04-09T09:12:44+00:00"
-        />
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:card" content={poolData.amiiboSeries} />
         <meta
           name="twitter:title"
           content={poolData?.amiiboSeries + "-" + poolData?.head}
         />
-        <meta
-          name="twitter:description"
-          content="Gujarati calendar 2024 is a beautiful blend of tradition and celestial guidance, tailored for the vibrant community of Gujarat and india. View full gujrati calendar 2024 here."
-        />
+        <meta name="twitter:description" content={poolData.amiiboSeries} />
         <meta name="twitter:image" content={poolData.image} />
-        <meta name="twitter:label1" content="Written by" />
-        <meta name="twitter:data1" content="Gujju" />
-        <meta name="twitter:label2" content="Time to read" />
-        <meta name="twitter:data2" content="2 minutes" />
       </Head>
 
       <Link href="/">Back to Home</Link>
